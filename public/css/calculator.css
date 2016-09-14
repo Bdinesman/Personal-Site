@@ -1,0 +1,47 @@
+
+#calcBody{
+	font-family: monospace;
+	position:fixed;
+	font-size:18px;
+	vertical-align: center;
+	height:176px;
+	width:136px;
+}
+#calcBody{
+	border:2px solid #fefe66;
+}
+#textAreaDiv{
+	position:relative;
+	font-weight:bold;
+	width:100%;
+	height:40px;
+	background-color:#01cdfe;
+}
+#display{
+	position:relative;
+	color:#fefe66;
+	background-color:#01cdfe;
+	text-align: center;
+	font-weight:bold;
+	width:135px;
+	height:40px;
+	padding:0;
+	border:0;
+	line-height: 40px;
+}
+.button{
+	position:relative;
+	float:left;
+	color:black;
+	width:34px;
+	height:34px;
+}
+.number{
+	background-color:darkgrey;
+}
+.operator{
+	background-color:lightgrey;
+}
+.clear-both{
+	clear:both;
+}
