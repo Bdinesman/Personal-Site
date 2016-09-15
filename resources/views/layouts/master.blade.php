@@ -28,7 +28,7 @@
       <a href="/" class="brand-logo"><img src="/foxgloveicon.png" class="logo"> Foxglove Studios</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/projects">Projects</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="https://www.linkedin.com/in/brandon-dinesman">LinkedIn</a></li>
         <li><a href="https://github.com/Bdinesman">Github</a></li>
       </ul>
