@@ -1,7 +1,5 @@
 @extends('layouts.master')
 @section('content')
-	<title>Weather Map</title>
-
 	  <style>
 	  body{
   			background-color:black;

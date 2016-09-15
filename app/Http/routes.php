@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/projects/',function(){
 	return view('completed_projects');
 });
-Route::get('/project/calculator', function(){
-	return view('calculator');
+Route::get('/about', function(){
+	return view('about');
 });
 Route::get('/projects/{name}','ProjectsController@show');
