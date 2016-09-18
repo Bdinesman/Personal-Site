@@ -7,13 +7,13 @@
 </style>
 <div class="container">
 	<h1>Our Team</h1>
-	<div style="background:#E0E4CC;" class="card row">
+	<div style="background:#E0E4CC;min-width:700px" class="card row">
 			<span class="card-title">
 			<h2 style="background-color:#FA6900">Brandon Dinesman</h2></span>
-			<div class="col m3">
+			<div  class="col m4 s4 fullHeight">
 				<img src="/img/brandondinesman.jpg">
 			</div>
-			<div class="col m9">
+			<div style="padding-left:10px" class="col m8 s8 fullHeight">
 				<p ><h5 style="font-weight:bolder;font-size:2rem ">Full stack developer with expertise in Javascript, jQuery, PHP, Laravel, MySQL, CSS, and HTML</h5></p> 
 				<p style="font-weight:bolder;font-size:1.5rem ">Brandon's background in biology and time spent teaching has fostered a deep passion for solving problems and learning new things. Currently, Brandon is learning to code in Java, and plans on learning many other languages down the line, including C++ and .NET</p>
 				<div>
@@ -23,4 +23,8 @@
 			</div>
 	</div>
 </div>
+<script>
+	var height=$(window).height();
+	$('fullHeight').height();
+</script>
 @stop

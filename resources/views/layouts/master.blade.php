@@ -15,10 +15,13 @@
         .logo{
             width:50px;
         }
-        html{
+        body{
             font-family: 'Raleway', sans-serif;
         }
         .carousel{
+            font-family: 'Raleway', sans-serif;
+        }
+        h1{
             font-family: 'Raleway', sans-serif;
         }
     </style>
