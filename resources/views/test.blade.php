@@ -54,32 +54,34 @@
     </div>
   </div>
   <script>
-    $('.carousel.carousel-slider').carousel({full_width: true});
-    setInterval(function(){
-        $('.carousel').carousel('next');
-    },5000)
-    var height=$(window).height()-$('nav').height();
-    var width=$(window).width();
-    if($('.mobile').css('display')=='block'){
-      displayForMobile();
-    }
-    var contentContainerHeight = $('.center').parents('.s6').first().height();
-    $('.bottom').css('position','relative');
-    var adjust=contentContainerHeight - $('.bottom').first().height() - $('i');
-    $('.bottom').css('top',adjust);
-    $('.bottom').css('margin',0);
-    $(window).resize(function(){
+  $(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({full_width: true});
+      setInterval(function(){
+          $('.carousel').carousel('next');
+      },5000)
+      var height=$(window).height()-$('nav').height();
       var width=$(window).width();
-      $('.carousel').width(width);
-      $('.carousel-item').width(width);
-    });
-    function displayForMobile(){
-      var width=$(window).width();
-      $('.carousel').width(width);
-      $('.carousel-item').width(width);
-          $('.carousel').height(height/2);
-      $('.col.s6').height(height/4);
-      $('.large').css('font-size','22rem');
-    }
+      if($('.mobile').css('display')=='block'){
+        displayForMobile();
+      }
+      var contentContainerHeight = $('.center').parents('.s6').first().height();
+      $('.bottom').css('position','relative');
+      var adjust=contentContainerHeight - $('.bottom').first().height() - $('i');
+      $('.bottom').css('top',adjust);
+      $('.bottom').css('margin',0);
+      $(window).resize(function(){
+        var width=$(window).width();
+        $('.carousel').width(width);
+        $('.carousel-item').width(width);
+      });
+      function displayForMobile(){
+        var width=$(window).width();
+        $('.carousel').width(width);
+        $('.carousel-item').width(width);
+            $('.carousel').height(height/2);
+        $('.col.s6').height(height/4);
+        $('.large').css('font-size','22rem');
+      }
+  });
   </script>
  @stop
